@@ -1,0 +1,40 @@
+.u-confine {
+    max-width: @width--s + @padding--xs * 2;
+    margin: 0 auto;
+    padding-left: @padding--xs;
+    padding-right: @padding--xs;
+}
+
+.u-container {
+    width: 100%;
+
+    &--nowrap {
+        display: table;
+    }
+}
+
+.u-clearfix {
+    zoom: 1;
+
+    &:before {
+        content: '';
+        display: block;
+    }
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@media @media--l {
+    .u-confine {
+        max-width: @width--l + @padding--xs * 2;
+    }
+}
+
+@media @media--xl {
+    .u-confine {
+        max-width: @width--xl + @padding--xs * 2;
+    }
+}

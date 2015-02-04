@@ -1,16 +1,25 @@
 // Widths and heights
-@width--xs: 320px;
-@width--s: 480px;
-@width--m: 768px;
-@width--l: 960px;
-@width--xl: 1180px;
+@width--xs:                     320px;
+@width--s:                      480px;
+@width--m:                      768px;
+@width--l:                      960px;
+@width--xl:                     1180px;
 
 // Margins and paddings
+@padding--xs:                   5px;
 
 // Media queries
-@media--xs: ~'only screen and (min-width: @{width--xs})';
-@media--s: ~'only screen and (min-width: @{width--s})';
-@media--m: ~'only screen and (min-width: @{width--m})';
-@media--l: ~'only screen and (min-width: @{width--l})';
-@media--xl: ~'only screen and (min-width: @{width--xl})';
+@media--xs:                     ~'only screen and (min-width: @{width--xs})';
+@media--s:                      ~'only screen and (min-width: @{width--s})';
+@media--m:                      ~'only screen and (min-width: @{width--m})';
+@media--l:                      ~'only screen and (min-width: @{width--l})';
+@media--xl:                     ~'only screen and (min-width: @{width--xl})';
 
+// Colors
+@import "variables/colors";
+
+// Text, fonts, font sizes
+@import "variables/text";
+
+// z-index
+@import "variables/z-index";

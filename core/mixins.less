@@ -1,3 +1,9 @@
+#m-grid(@base, @modifier: 0) {
+    #m-create-grid(@base, @base, @modifier);
+    #m-create-table-grid(@base, @base, @modifier);
+    #m-create-offset(@base, @base, @modifier);
+}
+
 #m-create-grid(@base, @index, @modifier: 0) when (@index > 0) {
     .u-g-@{index}-@{base} when (@modifier = 0) {
         width: 100% * @index / @base;

@@ -1,0 +1,46 @@
+#m-grid(@base, @modifier: 0) {
+    #m-create-grid(@base, @base, @modifier);
+    #m-create-table-grid(@base, @base, @modifier);
+    #m-create-offset(@base, @base, @modifier);
+}
+
+#m-create-grid(@base, @index, @modifier: 0) when (@index > 0) {
+    .u-g-@{index}-@{base} when (@modifier = 0) {
+        width: 100% * @index / @base;
+        float: left;
+    }
+    .u-g-@{index}-@{base}--@{modifier} when not (@modifier = 0) {
+        width: 100% * @index / @base;
+        float: left;
+    }
+    #m-create-grid(@base, (@index - 1), @modifier);
+}
+
+#m-create-table-grid(@base, @index, @modifier: 0) when (@index > 0) {
+    .u-tg-@{index}-@{base} when (@modifier = 0) {
+        width: 100% * @index / @base;
+        display: table-cell;
+    }
+    .u-tg-@{index}-@{base}--@{modifier} when not (@modifier = 0) {
+        width: 100% * @index / @base;
+        display: table-cell;
+    }
+    #m-create-table-grid(@base, (@index - 1), @modifier);
+}
+
+#m-create-offset(@base, @index, @modifier: 0) when (@index > 0) {
+    .u-o-@{index}-@{base} when (@modifier = 0) {
+        margin-left: 100% * @index / @base;
+    }
+    .u-o-@{index}-@{base}--@{modifier} when not (@modifier = 0) {
+        margin-left: 100% * @index / @base;
+    }
+    #m-create-offset(@base, (@index - 1), @modifier);
+}
+
+#m-font-size(@value) {
+    @rem-value: @value;
+    @px-value: (@value * 10);
+    font-size: ~'@{px-value}px';
+    font-size: ~'@{rem-value}rem';
+}

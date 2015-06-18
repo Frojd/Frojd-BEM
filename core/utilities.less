@@ -1,10 +1,10 @@
 .u-confine {
-    max-width: @width--s + @padding--xs * 2;
     margin: 0 auto;
-    padding-left: @padding--xs;
-    padding-right: @padding--xs;
+    padding-left: @padding--s;
+    padding-right: @padding--s;
 }
 
+// Use as a container for grid items
 .u-container {
     width: 100%;
 
@@ -27,14 +27,20 @@
     }
 }
 
-@media @media--l {
-    .u-confine {
-        max-width: @width--l + @padding--xs * 2;
+@media @media--m {
+    .u-confine--m {
+        max-width: @width--m;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
-@media @media--xl {
-    .u-confine {
-        max-width: @width--xl + @padding--xs * 2;
+@media @media--l {
+    .u-confine--l {
+        max-width: @width--l;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
     }
 }

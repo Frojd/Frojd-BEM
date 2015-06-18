@@ -44,23 +44,3 @@
     font-size: ~'@{px-value}px';
     font-size: ~'@{rem-value}rem';
 }
-
-#m-transform(...) {
-    -ms-transform: @arguments;
-    -webkit-transform: @arguments;
-    transform: @arguments;
-}
-
-#m-transition(...) {
-    -webkit-transition: @arguments;
-    transition: @arguments;
-}
-
-#m-gradient(@startColor, @endColor) {
-    background-color: @startColor;
-    background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
-    background: -webkit-linear-gradient(top, @startColor, @endColor);
-    background: -moz-linear-gradient(top, @startColor, @endColor);
-    background: -ms-linear-gradient(top, @startColor, @endColor);
-    background: -o-linear-gradient(top, @startColor, @endColor);
-}

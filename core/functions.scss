@@ -1,0 +1,16 @@
+// Returns greatest common divider
+@function gcd($a, $b) {
+    @if $b == 0 {
+        @return $a;
+    }
+    @return gcd($b, $a % $b);
+}
+
+// Returns a key value if it exsists
+@function get-default($map, $key: 'd') {
+    $value: $key;
+    @if map-has-key($map, $key) {
+        $value: map-get($map, $key);
+    }
+    @return $value;
+}

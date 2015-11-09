@@ -1,0 +1,65 @@
+$gutters: (
+    d: 0,
+    sm: 10px,
+    md: 20px,
+);
+
+// Döp om
+$spacings: (
+    d: 0,
+    sm: 10px,
+    md: 20px,
+);
+
+$breakpoints: (
+    sm: 480px,
+    md: 768px,
+    lg: 1024px,
+);
+
+$maxwidths: (
+    sm: 480px,
+    md: 768px,
+    lg: 1024px,
+);
+
+// scss-lint:disable all
+$palettes: (
+    black: (
+        d: #000000,
+        50: lighten(#000000, 50%)
+    ),
+    white: (
+        d: #ffffff,
+        50: darken(#ffffff, 50%)
+    ),
+    purple: (
+        d: #FF69B4,
+        50: darken(#FF69B4, 20%)
+    )
+);
+// scss-lint:enable all
+
+// Ej testad
+$fontsize: (
+    d: 1rem,
+    xs: 1.2rem,
+    sm: 1.4rem,
+    md: 1.6rem,
+    lg: 1.8rem,
+    xl: 2rem,
+);
+
+// Ej testad
+$zindex: (
+    1: 100,
+    2: 200,
+    3: 300,
+    4: 400,
+    5: 500,
+    6: 600,
+    7: 700,
+    8: 800,
+    9: 900,
+    10: 1000,
+);

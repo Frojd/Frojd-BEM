@@ -1,2 +1,2 @@
 # Frojd-BEM
-Css core BEM setup
+This branch is not tested so use with caution

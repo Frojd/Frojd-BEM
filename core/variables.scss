@@ -1,3 +1,7 @@
+$paths: (
+    img: '../../img'
+);
+
 $gutters: (
     d: 0,
     sm: 10px,
@@ -25,11 +29,11 @@ $maxwidths: (
 
 // scss-lint:disable all
 $palettes: (
-    black: (
+    red: (
         d: #000000,
         50: lighten(#000000, 50%)
     ),
-    white: (
+    blue: (
         d: #ffffff,
         50: darken(#ffffff, 50%)
     ),

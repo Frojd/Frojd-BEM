@@ -1,6 +1,5 @@
 // Custom mixins
 @mixin wrap($key) {
-    margin: 0 auto;
     max-width: get-default($maxwidths, $key);
 }
 
@@ -43,4 +42,8 @@
         @error 'Unfortunately, no value could be retrieved from `#{$breakpoints}`. '
         + 'Please make sure it is defined in `$breakpoints` map.';
     }
+}
+
+@mixin bg($src) {
+    background-image: url(#{map-get($paths, img)$src});
 }

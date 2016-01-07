@@ -1,0 +1,12 @@
+// Returns a key value if it exsists
+@function get-default($map, $key: 'default') {
+    $value: $key;
+    @if map-has-key($map, $key) {
+        $value: map-get($map, $key);
+    }
+    @return $value;
+}
+
+@function palette($palette, $tone: 'd') {
+    @return map-get(map-get($palettes, $palette), $tone);
+}

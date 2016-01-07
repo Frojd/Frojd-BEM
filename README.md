@@ -2,7 +2,7 @@
 A Sass-based, BEM-syntax css framework.
 
 ## Requirements
-- SASS (sasslib)
+- SASS (libsass)
 
 ## Note
 Contains lots of example code that are there just for guidance

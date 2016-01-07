@@ -1,4 +1,8 @@
 # Frojd-BEM
+A Sass-based, BEM-syntax css framework.
+
+## Requirements
+- SASS (sasslib)
 
 ## Note
 Contains lots of example code that are there just for guidance

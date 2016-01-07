@@ -1,0 +1,28 @@
+// Example of list displayed as a grid
+.example {
+
+    background-color: palette(red, 'default');
+    display: flex;
+    flex-flow: wrap;
+
+    &__item {
+        background-color: palette(red);
+        margin-bottom: 10px;
+        margin-left: 10px;
+        min-height: 100px;
+        width: calc(#{percentage(1 / 4)} - 10px);
+    }
+
+    &__item--modifier {
+        color: palette(purple, 50);
+    }
+}
+
+@include media(lg) {
+    .example {
+
+        &__item {
+            width: calc(#{percentage(1 / 6)} - 10px);
+        }
+    }
+}

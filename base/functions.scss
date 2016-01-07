@@ -7,6 +7,6 @@
     @return $value;
 }
 
-@function palette($palette, $tone: 'd') {
+@function palette($palette, $tone: 'default') {
     @return map-get(map-get($palettes, $palette), $tone);
 }

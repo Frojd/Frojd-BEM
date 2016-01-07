@@ -1,15 +1,20 @@
+// Example of list displayed as a grid
 .example {
 
-    @include grid-container;
-    background-color: palette(white);
+    background-color: palette(red, 'default');
+    display: flex;
+    flex-flow: wrap;
 
     &__item {
-        @include grid(1 / 3, md);
-        background-color: palette(black, 50);
+        background-color: palette(red);
+        margin-bottom: 10px;
+        margin-left: 10px;
+        min-height: 100px;
+        width: calc(#{percentage(1 / 4)} - 10px);
     }
 
     &__item--modifier {
-        color: palette(white, 50);
+        color: palette(purple, 50);
     }
 }
 
@@ -17,7 +22,7 @@
     .example {
 
         &__item {
-            @include grid(1 / 6, md);
+            width: calc(#{percentage(1 / 6)} - 10px);
         }
     }
 }

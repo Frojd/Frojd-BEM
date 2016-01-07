@@ -1,0 +1,23 @@
+// Example of how fonts should be implemented
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('#{$basepath}/fonts/2C5020_0_0.eot');
+    src: url('#{$basepath}/fonts/2C5020_0_0.eot?#iefix') format('embedded-opentype'),
+    url('#{$basepath}/fonts/2C5020_0_0.woff2') format('woff2'),
+    url('#{$basepath}/fonts/2C5020_0_0.woff') format('woff'),
+    url('#{$basepath}/fonts/2C5020_0_0.ttf') format('truetype'),
+    url('#{$basepath}/fonts/2C5020_0_0.svg#wf') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('#{$basepath}/fonts/2C5020_1_0.eot');
+    src: url('#{$basepath}/fonts/2C5020_1_0.eot?#iefix') format('embedded-opentype'),
+    url('#{$basepath}/fonts/2C5020_1_0.woff2') format('woff2'),
+    url('#{$basepath}/fonts/2C5020_1_0.woff') format('woff'),
+    url('#{$basepath}/fonts/2C5020_1_0.ttf') format('truetype'),
+    url('#{$basepath}/fonts/2C5020_1_0.svg#wf') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}

@@ -1,0 +1,13 @@
+// Example of an animation
+@keyframes loader-stretch {
+
+    0%,
+    40%,
+    100% {
+        transform: scaleY(.4);
+    }
+
+    20% {
+        transform: scaleY(1);
+    }
+}

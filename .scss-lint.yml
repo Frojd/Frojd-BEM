@@ -5,6 +5,8 @@ linters:
         enabled: false
     ColorKeyword:
         enabled: false
+    ColorVariable:
+        enabled: false
     HexLength:
         enabled: true
         style: long

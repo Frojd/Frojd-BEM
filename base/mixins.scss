@@ -1,3 +1,27 @@
+/*
+Generates a mediaquery selector based on dimension in $breakpoints from variables
+
+Example:
+
+    // In variables.scss
+    $breakpoints: (
+        sm: 480px
+    );
+
+    // Your bem-block
+    @include media(sm) {
+        .hello {
+            color: red;
+        }
+    }
+
+    Generates:
+        @media (min-width: 480px) {
+            .hello {
+                color: red;
+            }
+        }
+*/
 @mixin media($key) {
     @if map-has-key($breakpoints, $key) {
         @media (min-width: map-get($breakpoints, $key)) {

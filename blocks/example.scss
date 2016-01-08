@@ -1,6 +1,5 @@
 // Example of list displayed as a grid
 .example {
-
     background-color: palette(red, 'default');
     display: flex;
     flex-flow: wrap;
@@ -20,7 +19,6 @@
 
 @include media(lg) {
     .example {
-
         &__item {
             width: calc(#{percentage(1 / 6)} - 10px);
         }

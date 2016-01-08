@@ -1,4 +1,4 @@
-// Returns a key value if it exsists
+// Returns a key value if it exists
 @function get-default($map, $key: 'default') {
     $value: $key;
     @if map-has-key($map, $key) {
@@ -7,6 +7,25 @@
     @return $value;
 }
 
-@function palette($palette, $tone: 'd') {
+/*
+Returns color from the palette color map
+
+Example:
+    // variables.scss
+    $palettes: (
+        red: (
+            default: #ff0000,
+            50: lighten(#ff0000, 50%)
+        )
+    );
+
+    // Your block
+    palette(red), which is the same as palette(red, 'default') 
+        returns #FF0000
+
+    palette(purple, 50) 
+        returns lighten(#ff0000, 50%)
+*/
+@function palette($palette, $tone: 'default') {
     @return map-get(map-get($palettes, $palette), $tone);
 }
